@@ -1,23 +1,24 @@
+// App.js
 import React from 'react';
-import Header from './src/components/Header';
-import Hero from './src/components/Hero';
-import About from './src/components/About';
-import Service from './src/components/Service';
-import Project from './src/components/Project';
-import Footer from './src/components/Footer';
-
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Service from './components/Service';
+import Project from './components/Project';
+import Footer from './components/Footer';
+import './App.css'; // Import the global CSS file
 
 function App() {
-    return(
-        <div>
-            <Header />
-            <Hero />
-            <About />
-            <Service />
-            <Project />
-            <Footer />
-        </div>
-    );
-    
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <About />
+      <Service />
+      <Project />
+      <Footer />
+    </div>
+  );
 }
+
 export default App;

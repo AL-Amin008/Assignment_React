@@ -1,0 +1,15 @@
+/* Hero.css */
+.hero {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  

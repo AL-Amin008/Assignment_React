@@ -1,16 +1,14 @@
+// Header.jsx
 import React from 'react';
+import './Header.css'; // Import the CSS file
 
-const Header = ()=>{
-    const isLoggedIn = true;
-    return(
-        <header>
-            {isLoggedIn ?(
-                <h1>Welcome, User!</h1>
-            ):(
-                <h1>Welcome, Guest!</h1>
-            )};
-        </header>
-    );
+const Header = () => {
+  return (
+    <header className="header"> {/* Apply the CSS class */}
+      <h2>Welcome to My App</h2>
+      <p>Here's the header component content.</p>
+    </header>
+  );
 };
 
 export default Header;
