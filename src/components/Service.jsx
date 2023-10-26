@@ -1,11 +1,23 @@
 import React from 'react';
 
-const Service = ()=>{
-    return(
-        <header>
-            <h1>Service Component</h1>
-        </header>
-    );
+const services = [
+  "Service 1",
+  "Service 2",
+  "Service 3",
+  "Service 4",
+];
+
+const Service = () => {
+  return (
+    <div className="service">
+      <h2>Our Services</h2>
+      <ul>
+        {services.map((service, index) => (
+          <li key={index}>{service}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Service;

@@ -1,13 +1,17 @@
-// Hero.jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero = () => {
-  const isLoggedIn = true;
+  // Example: Condition to check if the user is an admin
+  const isAdmin = true;
 
   return (
-    <div>
-      <h2>Welcome to our website</h2>
-      {isLoggedIn ? <p>You are logged in.</p> : <p>Please log in to access more features.</p>}
+    <div className="hero">
+      <h2>Welcome to Our Website</h2>
+      {isAdmin ? (
+        <p>Welcome, Admin! You have access to admin features.</p>
+      ) : (
+        <p>Welcome, User! You have standard access.</p>
+      )}
     </div>
   );
 };
